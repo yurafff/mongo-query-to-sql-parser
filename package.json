@@ -1,0 +1,41 @@
+{
+  "name": "mongo-query-to-sql-parser",
+  "version": "1.0.0",
+  "description": "Translates MongoDB find queries to SQL SELECT queries.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "mocha --require ts-node/register test/**.ts",
+    "lint": "eslint lib/**.ts",
+    "lint:fix": "eslint lib/**.ts --fix",
+    "format": "prettier \"**/*.ts\" --ignore-path ./.prettierignore --write"
+  },
+  "keywords": [],
+  "author": "Yury Gogin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "chai": "^4.3.4",
+    "eslint-config-prettier": "^8.3.0",
+    "mocha": "^9.0.3",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  },
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "extension": [
+    ".ts"
+  ],
+  "require": [
+    "ts-node/register"
+  ],
+  "dependencies": {
+    "commander": "^8.1.0",
+    "ejson-shell-parser": "^1.1.1",
+    "mongodb-extended-json": "^1.11.1",
+    "mongodb-language-model": "^2.3.0"
+  }
+}

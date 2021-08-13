@@ -1,0 +1,9 @@
+# dependencies
+node_modules/
+
+# IDE
+/.idea
+
+# misc
+npm-debug.log
+/**/npm-debug.log
